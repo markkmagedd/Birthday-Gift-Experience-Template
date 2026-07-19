@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;700&family=Caveat:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#DBD3C4; }
+  a { color:#A5323B; } a:hover { color:#7E2730; }
+  @keyframes blink { 0%,55% {opacity:1;} 56%,100% {opacity:0;} }
+  @keyframes pulse { 0%,100% {opacity:1;} 50% {opacity:.5;} }
+</style>
+</helmet>
+<section style="padding:72px 80px 120px; font-family:'Karla',sans-serif; color:#2B2620; display:flex; flex-direction:column; gap:64px;">
+
+  <!-- ============ INTRO ============ -->
+  <div style="display:flex; flex-direction:column; gap:10px; max-width:760px;">
+    <div style="font-family:'VT323',monospace; font-size:15px; letter-spacing:2px; color:#8B8272;">BIRTHDAY GIFT EXPERIENCE — TEMPLATE SPEC</div>
+    <h1 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:54px; margin:0; line-height:1.05;">Eight phases, one tap at a time.</h1>
+    <p style="margin:6px 0 0; font-size:15px; line-height:1.6; color:#5C5546; max-width:560px;">Mobile-first (390×844), click-to-advance. Motion gets quieter as emotion intensifies. Elements outlined in <span style="outline:1.5px dashed #C98A2E; outline-offset:3px; padding:0 3px;">dashed amber</span> are swappable per client: name, photos, colors, song, letter.</p>
+  </div>
+
+  <!-- ============ FOUNDATIONS ============ -->
+  <div id="foundations" style="display:flex; flex-direction:column; gap:20px;">
+    <h2 style="font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:26px; margin:0; color:#5C5546;">Foundations</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:stretch;">
+      <!-- palette -->
+      <div style="background:#F7F1E6; border-radius:16px; padding:28px; width:360px; box-shadow:0 10px 30px rgba(43,38,32,.10); display:flex; flex-direction:column; gap:16px;">
+        <div style="font-size:11px; letter-spacing:2px; font-weight:700; color:#8B8272;">PALETTE</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#F7F1E6; border:1px solid #DED4C0;"></div><div><div style="font-weight:700; font-size:13px;">Cream — #F7F1E6</div><div style="font-size:12px; color:#8B8272;">primary surface</div></div></div>
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#EFE7D8;"></div><div><div style="font-weight:700; font-size:13px;">Bone — #EFE7D8</div><div style="font-size:12px; color:#8B8272;">alternate surface</div></div></div>
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#2B2620;"></div><div><div style="font-weight:700; font-size:13px;">Ink — #2B2620</div><div style="font-size:12px; color:#8B8272;">text</div></div></div>
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#8B8272;"></div><div><div style="font-weight:700; font-size:13px;">Warm grey — #8B8272</div><div style="font-size:12px; color:#8B8272;">muted, captions</div></div></div>
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#A5323B; outline:1.5px dashed #C98A2E; outline-offset:3px;"></div><div><div style="font-weight:700; font-size:13px;">Crimson — #A5323B</div><div style="font-size:12px; color:#8B8272;">the one accent · customizable</div></div></div>
+          <div style="display:flex; align-items:center; gap:12px;"><div style="width:44px; height:44px; border-radius:10px; background:#E8A33C;"></div><div><div style="font-weight:700; font-size:13px;">Amber — #E8A33C</div><div style="font-size:12px; color:#8B8272;">warm support — tape, flower centers, seal</div></div></div>
+        </div>
+      </div>
+      <!-- type -->
+      <div style="background:#F7F1E6; border-radius:16px; padding:28px; width:460px; box-shadow:0 10px 30px rgba(43,38,32,.10); display:flex; flex-direction:column; gap:16px;">
+        <div style="font-size:11px; letter-spacing:2px; font-weight:700; color:#8B8272;">TYPE — 4 FACES, 7 STEPS</div>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-family:'Instrument Serif',serif; font-size:64px; line-height:1;">Maya</span><span style="font-size:12px; color:#8B8272;">64 / display — Instrument Serif</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-family:'Instrument Serif',serif; font-size:40px; line-height:1;">Open your gift</span><span style="font-size:12px; color:#8B8272;">40 / headline</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-family:'Instrument Serif',serif; font-style:italic; font-size:26px; line-height:1;">a song for you</span><span style="font-size:12px; color:#8B8272;">26 / subhead italic</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-family:'Caveat',cursive; font-size:24px; line-height:1;">this one&rsquo;s ours</span><span style="font-size:12px; color:#8B8272;">24 / handwritten — Caveat</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-size:16px;">Body copy, list items</span><span style="font-size:12px; color:#8B8272;">16 / body — Karla</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-size:11px; letter-spacing:2.5px; font-weight:700;">TAP TO CONTINUE</span><span style="font-size:12px; color:#8B8272;">11 / UI caps</span></div>
+          <div style="display:flex; align-items:baseline; gap:14px;"><span style="font-family:'VT323',monospace; font-size:22px; color:#B5842E;">PHOTO 01</span><span style="font-size:12px; color:#8B8272;">VT323 — spec annotations + placeholder labels only</span></div>
+        </div>
+      </div>
+      <!-- spacing + custom map -->
+      <div style="background:#F7F1E6; border-radius:16px; padding:28px; width:330px; box-shadow:0 10px 30px rgba(43,38,32,.10); display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="font-size:11px; letter-spacing:2px; font-weight:700; color:#8B8272;">SPACING — 8PT BASE</div>
+          <div style="display:flex; align-items:flex-end; gap:8px;">
+            <div style="width:4px; height:4px; background:#A5323B;"></div><div style="width:8px; height:8px; background:#A5323B;"></div><div style="width:12px; height:12px; background:#A5323B;"></div><div style="width:16px; height:16px; background:#A5323B;"></div><div style="width:24px; height:24px; background:#A5323B;"></div><div style="width:32px; height:32px; background:#A5323B;"></div><div style="width:48px; height:48px; background:#A5323B;"></div><div style="width:64px; height:64px; background:#A5323B;"></div>
+          </div>
+          <div style="font-size:12px; color:#8B8272;">4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 — screen gutter 28, phase padding 32.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="font-size:11px; letter-spacing:2px; font-weight:700; color:#8B8272;">SWAPPABLE PER CLIENT</div>
+          <div style="font-size:13px; line-height:1.9; color:#5C5546;">① Recipient name — phases 2, 7<br>② Accent color — one token, everywhere<br>③ Song file, art, title + note — phase 4<br>④ List items ×5–7 — phase 5<br>⑤ Photos ×8–12 + captions — phase 6<br>⑥ Letter text + signature — phase 7<br>⑦ Date stamp — phases 2, 8</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MOBILE FLOW ============ -->
+  <div style="display:flex; flex-direction:column; gap:20px;">
+    <h2 style="font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:26px; margin:0; color:#5C5546;">The eight phases — 390×844</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:44px; align-items:flex-start;">
+
+      <!-- PHASE 1 : START -->
+      <div id="p1" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 01 — PRESS START</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#F7F1E6;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 18%, rgba(217,141,132,.20), transparent 60%);"></div>
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:32px; text-align:center;">
+            <div style="font-size:12px; letter-spacing:3px; font-weight:700; color:#8B8272;">A GIFT, MADE BY HAND</div>
+            <!-- childhood photo print -->
+            <div style="position:relative; margin:14px 0 6px;">
+              <div style="width:230px; padding:10px 10px 34px; background:#FDFAF3; box-shadow:0 14px 34px rgba(43,38,32,.20); transform:rotate(-3deg); outline:1.5px dashed #C98A2E; outline-offset:6px;">
+                <div style="height:250px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">childhood photo</span></div>
+                <div style="font-family:'Caveat',cursive; font-size:19px; color:#5C5546; margin-top:6px; text-align:center;">you, before I knew you</div>
+              </div>
+              <div style="position:absolute; top:-10px; left:88px; width:54px; height:18px; background:rgba(232,163,60,.4); transform:rotate(-5deg);"></div>
+            </div>
+            <div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:31px; line-height:1.2; color:#2B2620;">this is for you.</div>
+            <div style="margin-top:18px; font-size:12px; letter-spacing:3px; font-weight:700; color:#F7F1E6; background:#A5323B; border-radius:100px; padding:15px 34px; box-shadow:0 8px 22px rgba(165,50,59,.35); animation:pulse 1.8s ease-in-out infinite;">► PRESS START</div>
+          </div>
+          <div style="position:absolute; bottom:26px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:2.5px; color:#8B8272;">MADE BY HAND · JULY 2026</div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — the print settles down 24px with a soft fade (800ms); PRESS START pulses gently. <b>ADVANCE</b> — tap the button. <b>CUSTOM</b> — childhood photo + caption.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 2 : ANNOUNCEMENT -->
+      <div id="p2" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 02 — THE ANNOUNCEMENT</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#F7F1E6;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 24%, rgba(217,141,132,.30), transparent 62%);"></div>
+          <!-- hearts: rotated square + two circles -->
+          <div style="position:absolute; top:150px; left:44px; transform:rotate(-14deg); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#D98D84; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div></div>
+          <div style="position:absolute; top:96px; right:82px; transform:rotate(12deg) scale(1.3); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#A5323B; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div></div>
+          <div style="position:absolute; bottom:228px; right:44px; transform:rotate(-8deg); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#D98D84; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div></div>
+          <!-- confetti -->
+          <div style="position:absolute; top:64px; left:38px; width:10px; height:16px; background:#A5323B; transform:rotate(24deg);"></div>
+          <div style="position:absolute; top:118px; right:52px; width:9px; height:9px; border-radius:50%; background:#E8A33C;"></div>
+          <div style="position:absolute; top:190px; left:84px; width:8px; height:14px; background:#E8A33C; transform:rotate(-32deg);"></div>
+          <div style="position:absolute; top:88px; right:120px; width:11px; height:11px; background:#A5323B; transform:rotate(45deg);"></div>
+          <div style="position:absolute; top:250px; right:36px; width:10px; height:16px; background:#A5323B; transform:rotate(60deg); opacity:.7;"></div>
+          <div style="position:absolute; top:300px; left:30px; width:8px; height:8px; border-radius:50%; background:#2B2620; opacity:.5;"></div>
+          <div style="position:absolute; bottom:250px; left:52px; width:9px; height:15px; background:#E8A33C; transform:rotate(12deg);"></div>
+          <div style="position:absolute; bottom:190px; right:60px; width:10px; height:10px; background:#A5323B; transform:rotate(30deg); opacity:.6;"></div>
+          <div style="position:absolute; bottom:320px; right:110px; width:7px; height:12px; background:#2B2620; transform:rotate(-20deg); opacity:.35;"></div>
+          <div style="position:absolute; top:400px; left:20px; width:8px; height:13px; background:#A5323B; transform:rotate(-50deg); opacity:.5;"></div>
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:32px; text-align:center;">
+            <div style="font-size:12px; letter-spacing:3px; font-weight:700; color:#8B8272; outline:1.5px dashed #C98A2E; outline-offset:5px; padding:2px 6px;">JULY 19 — THE ONLY DATE THAT MATTERS</div>
+            <div style="font-family:'Instrument Serif',serif; font-size:34px; line-height:1.1; margin-top:10px;">happy birthday,</div>
+            <div style="font-family:'Instrument Serif',serif; font-size:110px; line-height:.95; color:#A5323B; outline:1.5px dashed #C98A2E; outline-offset:8px; padding:4px 10px;">{{ recipientName }}</div>
+            <div style="font-family:'Caveat',cursive; font-size:26px; color:#5C5546; transform:rotate(-2deg); margin-top:14px;">I made you something, my love.<br>it&rsquo;s a little much. stay with me.</div>
+          </div>
+          <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px;">KEEP GOING ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — the loudest moment: name letters rise 40px with overshoot (stagger 60ms), confetti bursts from top edge and drifts 1.4s with physics, handwritten line draws in last. <b>ADVANCE</b> — pill button. <b>CUSTOM</b> — name, date line.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 3 : FLOWERS -->
+      <div id="p3" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 03 — FLOWERS</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#EFE7D8;">
+          <div style="position:absolute; top:76px; left:0; right:0; text-align:center;">
+            <div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:28px; color:#2B2620;">flowers, obviously</div>
+            <div style="font-family:'Caveat',cursive; font-size:22px; color:#8B8272; margin-top:6px;">the kind that never wilt</div>
+          </div>
+          <!-- bouquet -->
+          <div style="position:absolute; left:50%; top:340px; transform:translateX(-50%); width:300px; height:380px;">
+            <!-- stems -->
+            <div style="position:absolute; left:146px; top:60px; width:3px; height:190px; background:#5C6B4F; transform:rotate(-14deg); transform-origin:bottom;"></div>
+            <div style="position:absolute; left:146px; top:40px; width:3px; height:210px; background:#5C6B4F;"></div>
+            <div style="position:absolute; left:146px; top:66px; width:3px; height:186px; background:#5C6B4F; transform:rotate(15deg); transform-origin:bottom;"></div>
+            <div style="position:absolute; left:146px; top:96px; width:3px; height:156px; background:#5C6B4F; transform:rotate(-27deg); transform-origin:bottom;"></div>
+            <div style="position:absolute; left:146px; top:96px; width:3px; height:156px; background:#5C6B4F; transform:rotate(27deg); transform-origin:bottom;"></div>
+            <!-- leaves -->
+            <div style="position:absolute; left:104px; top:170px; width:34px; height:14px; background:#6E7D5C; border-radius:50%; transform:rotate(-35deg);"></div>
+            <div style="position:absolute; left:162px; top:150px; width:34px; height:14px; background:#6E7D5C; border-radius:50%; transform:rotate(30deg);"></div>
+            <!-- flower A (crimson, big, center) -->
+            <div style="position:absolute; left:113px; top:-4px; width:70px; height:70px;">
+              <div style="position:absolute; left:24px; top:0px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:44px; top:12px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:44px; top:34px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:24px; top:46px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:4px; top:34px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:4px; top:12px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:23px; top:22px; width:24px; height:24px; border-radius:50%; background:#E8A33C;"></div>
+            </div>
+            <!-- flower B (blush, left) -->
+            <div style="position:absolute; left:52px; top:36px; width:58px; height:58px;">
+              <div style="position:absolute; left:19px; top:0px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:36px; top:10px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:36px; top:28px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:19px; top:38px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:2px; top:28px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:2px; top:10px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div>
+              <div style="position:absolute; left:20px; top:19px; width:19px; height:19px; border-radius:50%; background:#B5842E;"></div>
+            </div>
+            <!-- flower C (amber, right) -->
+            <div style="position:absolute; left:186px; top:40px; width:58px; height:58px;">
+              <div style="position:absolute; left:19px; top:0px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:36px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:36px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:19px; top:38px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:2px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:2px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div>
+              <div style="position:absolute; left:20px; top:19px; width:19px; height:19px; border-radius:50%; background:#7E2730;"></div>
+            </div>
+            <!-- flower D (cream, far left low) -->
+            <div style="position:absolute; left:18px; top:96px; width:46px; height:46px;">
+              <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div>
+              <div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#E8A33C;"></div>
+            </div>
+            <!-- flower E (crimson small, far right low) -->
+            <div style="position:absolute; left:232px; top:100px; width:46px; height:46px;">
+              <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div>
+              <div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#FBF6EC;"></div>
+            </div>
+            <!-- wrap -->
+            <div style="position:absolute; left:88px; top:238px; width:124px; height:120px; background:#F3EBDC; clip-path:polygon(8% 0, 92% 0, 66% 100%, 34% 100%); box-shadow:inset 0 -14px 24px rgba(43,38,32,.10);"></div>
+            <div style="position:absolute; left:96px; top:262px; width:108px; height:10px; background:#A5323B; transform:rotate(-2deg);"></div>
+          </div>
+          <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px;">THERE&rsquo;S MORE ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — unhurried: stems draw upward 900ms, then each bloom scales 0→1 with soft back-ease, stagger 140ms, ~2.6s total. Idle: whole bouquet sways ±1°. <b>ADVANCE</b> — pill button.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 4 : SONG -->
+      <div id="p4" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 04 — A SONG</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#F7F1E6;">
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0; padding:32px;">
+            <div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:26px; color:#2B2620; margin-bottom:36px;">a song that reminds me of you</div>
+            <div style="width:250px; height:250px; border-radius:14px; background:repeating-linear-gradient(45deg, #E4DAC6 0px, #E4DAC6 10px, #EDE4D2 10px, #EDE4D2 20px); box-shadow:0 16px 40px rgba(43,38,32,.18); display:flex; align-items:center; justify-content:center; outline:1.5px dashed #C98A2E; outline-offset:6px;">
+              <span style="font-family:'VT323',monospace; font-size:15px; color:#8B8272;">album art / photo</span>
+            </div>
+            <div style="font-family:'Instrument Serif',serif; font-size:30px; margin-top:32px; outline:1.5px dashed #C98A2E; outline-offset:4px; padding:0 8px;">{{ songTitle }}</div>
+            <div style="font-size:13px; letter-spacing:2px; font-weight:700; color:#8B8272; margin-top:8px;">{{ songArtist }}</div>
+            <!-- player -->
+            <div style="display:flex; align-items:center; gap:16px; margin-top:34px; width:280px;">
+              <div style="width:54px; height:54px; border-radius:50%; background:#A5323B; flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 16px rgba(165,50,59,.35);">
+                <div style="width:0; height:0; border-left:16px solid #F7F1E6; border-top:10px solid transparent; border-bottom:10px solid transparent; margin-left:4px;"></div>
+              </div>
+              <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+                <div style="position:relative; height:3px; background:#DED4C0; border-radius:2px;">
+                  <div style="position:absolute; left:0; top:0; height:3px; width:38%; background:#A5323B; border-radius:2px;"></div>
+                  <div style="position:absolute; left:38%; top:-4px; width:11px; height:11px; border-radius:50%; background:#A5323B;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:11px; color:#8B8272; letter-spacing:1px;"><span>1:24</span><span>3:41</span></div>
+              </div>
+            </div>
+            <div style="font-family:'Caveat',cursive; font-size:23px; color:#5C5546; margin-top:36px; text-align:center; line-height:1.4; max-width:290px; transform:rotate(-1.5deg); outline:1.5px dashed #C98A2E; outline-offset:6px; padding:4px;">verse two, second line — that&rsquo;s the one. you know it.</div>
+          </div>
+          <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px;">NEXT ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — art settles down 20px + fade 700ms; progress bar draws left→right; note fades last. Playing: art pulses ±1.5% on beat (optional). <b>ADVANCE</b> — button; audio keeps playing across remaining phases. <b>CUSTOM</b> — audio file, art, title, artist, note.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 5 : THINGS I LOVE -->
+      <div id="p5" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 05 — THINGS I LOVE ABOUT YOU</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#F3E4D4;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%, rgba(217,141,132,.22), transparent 55%);"></div>
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:40px 36px;">
+            <div style="margin-bottom:40px;">
+              <div style="font-family:'Instrument Serif',serif; font-size:34px; line-height:1.15;">things I <span style="font-style:italic; color:#A5323B;">love</span><br>about you</div>
+              <div style="font-family:'Caveat',cursive; font-size:22px; color:#8B8272; margin-top:8px;">six of them. there are about a million.</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:26px; outline:1.5px dashed #C98A2E; outline-offset:14px;">
+              <div style="display:flex; gap:16px; align-items:baseline;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">01</span><span style="font-size:17px; line-height:1.45;">the way you narrate the dog&rsquo;s inner monologue</span></div>
+              <div style="display:flex; gap:16px; align-items:baseline;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">02</span><span style="font-size:17px; line-height:1.45;">you always order wrong, then eat half of mine</span></div>
+              <div style="display:flex; gap:16px; align-items:baseline;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">03</span><span style="font-size:17px; line-height:1.45;">your laugh arrives before the joke lands</span></div>
+              <div style="display:flex; gap:16px; align-items:baseline;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">04</span><span style="font-size:17px; line-height:1.45;">you kept the ticket stubs. all of them</span></div>
+              <div style="display:flex; gap:16px; align-items:baseline; opacity:.3;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">05</span><span style="font-size:17px; line-height:1.45;">&ldquo;one more episode&rdquo; meaning three</span></div>
+              <div style="display:flex; gap:16px; align-items:baseline; opacity:.14;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">06</span><span style="font-size:17px; line-height:1.45;">how you make ordinary Tuesdays feel like this</span></div>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px;">ONE MORE ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — heading only. Each tap of the button reveals the next line: 12px rise + fade, 450ms, nothing else moves. Shown mid-state: 4 revealed, 05 incoming, 06 waiting. After the last line the button reads CONTINUE and advances. <b>CUSTOM</b> — 5–7 list items.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 6 : PHOTOS -->
+      <div id="p6" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 06 — PHOTOS</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#EFE7D8; outline:1.5px dashed #C98A2E; outline-offset:6px;">
+          <div style="position:absolute; top:52px; left:0; right:0; text-align:center; z-index:5;">
+            <div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:27px;">evidence of a good year</div>
+          </div>
+          <!-- scattered prints: white border = print, striped fill = photo slot -->
+          <div style="position:absolute; top:120px; left:22px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-5deg); z-index:2;"><div style="height:130px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 01</span></div></div>
+          <div style="position:absolute; top:148px; right:18px; width:164px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:3;"><div style="height:118px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 02</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">the ferry, march</div></div>
+          <div style="position:absolute; top:296px; left:48px; width:140px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(3deg); z-index:4;"><div style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 03</span></div></div>
+          <div style="position:absolute; top:330px; right:34px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-6deg); z-index:2;"><div style="height:112px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 04</span></div></div>
+          <div style="position:absolute; top:468px; left:20px; width:160px; padding:8px 8px 28px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-2deg); z-index:3;"><div style="height:126px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 05</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">you, mid-sneeze</div></div>
+          <div style="position:absolute; top:500px; right:24px; width:144px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(5deg); z-index:2;"><div style="height:136px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 06</span></div></div>
+          <div style="position:absolute; top:636px; left:56px; width:136px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:4;"><div style="height:104px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 07</span></div></div>
+          <div style="position:absolute; top:616px; right:40px; width:148px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-4deg); z-index:3;"><div style="height:110px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 08</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">stolen fries</div></div>
+          <!-- tape -->
+          <div style="position:absolute; top:112px; left:76px; width:44px; height:16px; background:rgba(232,163,60,.35); transform:rotate(-8deg); z-index:5;"></div>
+          <div style="position:absolute; top:322px; right:96px; width:44px; height:16px; background:rgba(232,163,60,.35); transform:rotate(6deg); z-index:5;"></div>
+          <div style="position:absolute; top:630px; left:104px; width:44px; height:16px; background:rgba(232,163,60,.35); transform:rotate(3deg); z-index:6;"></div>
+          <div style="position:absolute; bottom:36px; left:0; right:0; display:flex; justify-content:center; z-index:6;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; background:rgba(239,231,216,.9);">ALMOST THERE ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — prints deal onto the surface one by one from slightly above, rotation settling ±2° past final, stagger 180ms. Tap a print to bring it front + straighten. 8 shown; template holds 8–12. <b>CUSTOM</b> — every photo + handwritten captions.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 7 : LETTER -->
+      <div id="p7" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 07 — THE LETTER</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#DEC7A8;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 100%, rgba(165,50,59,.14), transparent 60%);"></div>
+          <div style="position:absolute; inset:24px 20px 84px; background:linear-gradient(180deg, #FCF5E4 0%, #F8EDD6 100%); box-shadow:0 12px 34px rgba(43,38,32,.22), inset 0 0 60px rgba(217,141,132,.10); padding:36px 30px; outline:1.5px dashed #C98A2E; outline-offset:-10px;">
+            <div style="font-family:'Caveat',cursive; font-size:21px; line-height:1.5; color:#3A342B;">
+              <div style="font-size:28px; margin-bottom:14px;">{{ recipientName }},</div>
+              <p style="margin:0 0 13px;">I started this letter four different ways and none of them sounded like us. So here&rsquo;s the plain version.</p>
+              <p style="margin:0 0 13px;">This year I watched you do hard things quietly &mdash; hold people up without being asked, laugh anyway on days that didn&rsquo;t deserve it. You think nobody notices. I notice everything.</p>
+              <p style="margin:0 0 13px;">I can&rsquo;t fit a whole year of being lucky onto one page, so instead: thank you. For the coffee handed over without a word. For dancing badly in the kitchen, on purpose. For choosing us on every ordinary day like it&rsquo;s nothing.</p>
+              <p style="margin:0 0 18px;">Whatever this next year turns out to be, I want the seat next to you.</p>
+              <div style="font-size:24px;">happy birthday, my love.</div>
+              <div style="display:flex; align-items:center; gap:18px; margin-top:14px;">
+                <div style="font-size:28px; transform:rotate(-2deg);">&mdash; J.</div>
+                <div style="width:40px; height:40px; border-radius:50%; background:#A5323B; box-shadow:0 4px 10px rgba(126,39,48,.4); display:flex; align-items:center; justify-content:center; transform:rotate(8deg);"><div style="width:27px; height:27px; border-radius:50%; border:2px solid rgba(247,241,230,.55);"></div></div>
+              </div>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:32px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; color:#6E6656;">ONE LAST THING ⟶</div>
+          </div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — a single 900ms opacity fade. Then nothing moves; the advance control is quiet bare text, no border. Long letters scroll within the sheet. <b>CUSTOM</b> — full letter text + signature.</div>
+        </sc-if>
+      </div>
+
+      <!-- PHASE 8 : OPEN YOUR GIFT -->
+      <div id="p8" style="display:flex; flex-direction:column; gap:12px; width:390px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 08 — NOW OPEN YOUR GIFT</div>
+        <div style="width:390px; height:844px; border-radius:28px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#8E2B34;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 30%, rgba(255,240,220,.10), transparent 60%);"></div>
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px; padding:40px; text-align:center; color:#F7F1E6;">
+            <!-- bow: two ribbon loops + tails + knot -->
+            <div style="position:relative; width:150px; height:110px; margin-bottom:10px;">
+              <div style="position:absolute; left:8px; top:22px; width:64px; height:36px; border:9px solid #F7F1E6; border-radius:50%; transform:rotate(-24deg); opacity:.92;"></div>
+              <div style="position:absolute; right:8px; top:22px; width:64px; height:36px; border:9px solid #F7F1E6; border-radius:50%; transform:rotate(24deg); opacity:.92;"></div>
+              <div style="position:absolute; left:56px; top:58px; width:13px; height:46px; background:#F7F1E6; transform:rotate(18deg); border-radius:3px; opacity:.85;"></div>
+              <div style="position:absolute; right:56px; top:58px; width:13px; height:46px; background:#F7F1E6; transform:rotate(-18deg); border-radius:3px; opacity:.85;"></div>
+              <div style="position:absolute; left:61px; top:38px; width:28px; height:28px; border-radius:50%; background:#E8A33C;"></div>
+            </div>
+            <div style="font-family:'Caveat',cursive; font-size:24px; color:#EDCFB4;">the screen part is over</div>
+            <div style="font-family:'Instrument Serif',serif; font-size:52px; line-height:1.08;">now open<br>your gift.</div>
+            <div style="font-size:15px; line-height:1.6; color:#EDCFB4; max-width:250px;">it&rsquo;s the box this code was taped to. go on &mdash; carefully with the ribbon.</div>
+          </div>
+          <div style="position:absolute; bottom:36px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:2.5px; color:rgba(247,241,230,.55);">MADE BY HAND · JULY 2026</div>
+        </div>
+        <sc-if value="{{ showSpecNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="font-size:12px; line-height:1.7; color:#6E6656; border-top:1px solid #C6BCA8; padding-top:10px;"><b>IN</b> — slow 1.6s crossfade from paper to crimson; bow fades with it. No advance control — the last instruction is physical. <b>CUSTOM</b> — date stamp, instruction line.</div>
+        </sc-if>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DESKTOP ADAPTATIONS ============ -->
+  <div style="display:flex; flex-direction:column; gap:20px;">
+    <h2 style="font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; font-size:26px; margin:0; color:#5C5546;">Desktop adaptations — phases 2, 6, 7 (1280×800)</h2>
+    <div style="display:flex; flex-direction:column; gap:44px;">
+
+      <!-- DESKTOP 2 -->
+      <div id="d2" style="display:flex; flex-direction:column; gap:12px; width:1280px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 02 · DESKTOP — name scales to viewport width; confetti field widens</div>
+        <div style="width:1280px; height:800px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#F7F1E6;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 26%, rgba(217,141,132,.28), transparent 60%);"></div>
+          <div style="position:absolute; top:180px; left:230px; transform:rotate(-14deg) scale(1.4); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#D98D84; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div></div>
+          <div style="position:absolute; top:260px; right:260px; transform:rotate(10deg) scale(1.6); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#A5323B; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div></div>
+          <div style="position:absolute; top:90px; left:120px; width:12px; height:20px; background:#A5323B; transform:rotate(24deg);"></div>
+          <div style="position:absolute; top:150px; left:320px; width:10px; height:10px; border-radius:50%; background:#E8A33C;"></div>
+          <div style="position:absolute; top:110px; right:180px; width:13px; height:13px; background:#A5323B; transform:rotate(45deg);"></div>
+          <div style="position:absolute; top:230px; right:340px; width:10px; height:16px; background:#E8A33C; transform:rotate(-30deg);"></div>
+          <div style="position:absolute; bottom:200px; left:200px; width:11px; height:17px; background:#E8A33C; transform:rotate(14deg);"></div>
+          <div style="position:absolute; bottom:260px; right:150px; width:11px; height:11px; background:#A5323B; transform:rotate(30deg); opacity:.6;"></div>
+          <div style="position:absolute; top:320px; left:90px; width:9px; height:9px; border-radius:50%; background:#2B2620; opacity:.4;"></div>
+          <div style="position:absolute; bottom:160px; right:420px; width:9px; height:14px; background:#2B2620; transform:rotate(-24deg); opacity:.3;"></div>
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; text-align:center;">
+            <div style="font-size:13px; letter-spacing:3.5px; font-weight:700; color:#8B8272;">JULY 19 — THE ONLY DATE THAT MATTERS</div>
+            <div style="font-family:'Instrument Serif',serif; font-size:44px; line-height:1;">happy birthday,</div>
+            <div style="font-family:'Instrument Serif',serif; font-size:220px; line-height:.9; color:#A5323B; outline:1.5px dashed #C98A2E; outline-offset:10px; padding:8px 24px;">{{ recipientName }}</div>
+            <div style="font-family:'Caveat',cursive; font-size:32px; color:#5C5546; transform:rotate(-2deg); margin-top:8px;">I made you something, my love. it&rsquo;s a little much.</div>
+          </div>
+          <div style="position:absolute; bottom:44px; left:0; right:0; display:flex; justify-content:center;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; border:1px solid #2B2620; border-radius:100px; padding:13px 30px;">KEEP GOING ⟶</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP 6 -->
+      <div id="d6" style="display:flex; flex-direction:column; gap:12px; width:1280px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 06 · DESKTOP — the pile spreads into a table-top scatter; capacity rises to 12</div>
+        <div style="width:1280px; height:800px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#EFE7D8;">
+          <div style="position:absolute; top:52px; left:0; right:0; text-align:center; z-index:8;"><div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:32px;">evidence of a good year</div></div>
+          <div style="position:absolute; top:130px; left:70px; width:190px; padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(-6deg); z-index:2;"><div style="height:160px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 01</span></div></div>
+          <div style="position:absolute; top:180px; left:300px; width:180px; padding:10px 10px 30px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(3deg); z-index:3;"><div style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 02</span></div><div style="font-family:'Caveat',cursive; font-size:18px; color:#5C5546; margin-top:5px; text-align:center;">the ferry, march</div></div>
+          <div style="position:absolute; top:120px; left:530px; width:200px; padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(-2deg); z-index:2;"><div style="height:150px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 03</span></div></div>
+          <div style="position:absolute; top:170px; left:780px; width:185px; padding:10px 10px 30px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(5deg); z-index:3;"><div style="height:145px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 04</span></div></div>
+          <div style="position:absolute; top:128px; right:60px; width:190px; padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(-4deg); z-index:2;"><div style="height:155px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 05</span></div><div style="font-family:'Caveat',cursive; font-size:18px; color:#5C5546; margin-top:5px; text-align:center;">you, mid-sneeze</div></div>
+          <div style="position:absolute; top:420px; left:110px; width:185px; padding:10px 10px 30px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(4deg); z-index:4;"><div style="height:145px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 06</span></div></div>
+          <div style="position:absolute; top:460px; left:350px; width:195px; padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(-5deg); z-index:3;"><div style="height:150px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 07</span></div><div style="font-family:'Caveat',cursive; font-size:18px; color:#5C5546; margin-top:5px; text-align:center;">stolen fries</div></div>
+          <div style="position:absolute; top:430px; left:600px; width:180px; padding:10px 10px 30px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(2deg); z-index:2;"><div style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 08</span></div></div>
+          <div style="position:absolute; top:470px; left:830px; width:190px; padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(-3deg); z-index:4;"><div style="height:148px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 09</span></div></div>
+          <div style="position:absolute; top:425px; right:55px; width:185px; padding:10px 10px 30px; background:#FDFAF3; box-shadow:0 10px 26px rgba(43,38,32,.18); transform:rotate(6deg); z-index:3;"><div style="height:142px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">photo 10</span></div><div style="font-family:'Caveat',cursive; font-size:18px; color:#5C5546; margin-top:5px; text-align:center;">4am pancakes</div></div>
+          <div style="position:absolute; top:126px; left:126px; width:52px; height:18px; background:rgba(232,163,60,.35); transform:rotate(-8deg); z-index:6;"></div>
+          <div style="position:absolute; top:164px; left:840px; width:52px; height:18px; background:rgba(232,163,60,.35); transform:rotate(5deg); z-index:6;"></div>
+          <div style="position:absolute; top:452px; left:406px; width:52px; height:18px; background:rgba(232,163,60,.35); transform:rotate(4deg); z-index:6;"></div>
+          <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center; z-index:8;">
+            <div style="font-size:11px; letter-spacing:2.5px; font-weight:700; border:1px solid #2B2620; border-radius:100px; padding:13px 30px; background:rgba(239,231,216,.9);">ALMOST THERE ⟶</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP 7 -->
+      <div id="d7" style="display:flex; flex-direction:column; gap:12px; width:1280px;">
+        <div style="font-family:'VT323',monospace; font-size:16px; letter-spacing:1px; color:#8B8272;">PHASE 07 · DESKTOP — one sheet, centered on the desk; line length capped at ~55ch</div>
+        <div style="width:1280px; height:800px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 24px 60px rgba(43,38,32,.22); background:#DEC7A8; display:flex; align-items:center; justify-content:center;">
+          <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 100%, rgba(165,50,59,.14), transparent 60%);"></div>
+          <div style="position:relative; width:640px; background:linear-gradient(180deg, #FCF5E4 0%, #F8EDD6 100%); box-shadow:0 20px 50px rgba(43,38,32,.24), inset 0 0 60px rgba(217,141,132,.10); padding:56px 64px;">
+            <div style="font-family:'Caveat',cursive; font-size:25px; line-height:1.6; color:#3A342B;">
+              <div style="font-size:32px; margin-bottom:18px;">{{ recipientName }},</div>
+              <p style="margin:0 0 16px;">I started this letter four different ways and none of them sounded like us. So here&rsquo;s the plain version.</p>
+              <p style="margin:0 0 16px;">This year I watched you do hard things quietly &mdash; hold people up without being asked, laugh anyway on days that didn&rsquo;t deserve it. You think nobody notices. I notice everything.</p>
+              <p style="margin:0 0 16px;">I can&rsquo;t fit a whole year of being lucky onto one page, so instead: thank you. For the coffee handed over without a word. For dancing badly in the kitchen, on purpose. For choosing us on every ordinary day like it&rsquo;s nothing.</p>
+              <p style="margin:0 0 22px;">Whatever this next year turns out to be, I want the seat next to you.</p>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:27px;">happy birthday, my love.</span><span style="display:flex; align-items:center; gap:16px;"><span style="font-size:32px; transform:rotate(-2deg);">&mdash; J.</span><span style="width:44px; height:44px; border-radius:50%; background:#A5323B; box-shadow:0 4px 10px rgba(126,39,48,.4); display:flex; align-items:center; justify-content:center; transform:rotate(8deg);"><span style="width:30px; height:30px; border-radius:50%; border:2px solid rgba(247,241,230,.55); display:block;"></span></span></span></div>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:36px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:2.5px; font-weight:700; color:#8B8272;">ONE LAST THING ⟶</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;recipientName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Maya&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;songTitle&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Golden Hour&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;songArtist&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;KACEY MUSGRAVES&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;showSpecNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Spec&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      recipientName: this.props.recipientName ?? "Maya",
+      songTitle: this.props.songTitle ?? "Golden Hour",
+      songArtist: this.props.songArtist ?? "KACEY MUSGRAVES",
+      showSpecNotes: this.props.showSpecNotes ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>

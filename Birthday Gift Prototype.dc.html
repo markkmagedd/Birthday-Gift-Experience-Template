@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;700&family=Caveat:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+  body { margin:0; background:#161210; overflow:hidden; }
+  a { color:#A5323B; } a:hover { color:#7E2730; }
+  @keyframes pulse { 0%,100% {opacity:1;} 50% {opacity:.55;} }
+</style>
+</helmet>
+<div style="position:relative; width:100vw; height:100dvh; overflow:hidden; font-family:'Karla',sans-serif; color:#2B2620; background:#F7F1E6;">
+
+  <!-- PHASE 1 : PRESS START -->
+  <div id="ph1" data-screen-label="1 — Press start" onClick="{{ adv }}" style="position:absolute; inset:0; background:#F7F1E6; cursor:pointer;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 18%, rgba(217,141,132,.20), transparent 60%);"></div>
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:32px; text-align:center;">
+      <div data-p1="1" style="font-size:12px; letter-spacing:3px; font-weight:700; color:#8B8272;">A GIFT, MADE BY HAND</div>
+      <div data-p1="2" style="position:relative; margin:12px 0 4px;">
+        <div style="width:min(230px, 56vw); padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 14px 34px rgba(43,38,32,.20); transform:rotate(-3deg);">
+          <div style="height:min(250px, 60vw); background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">childhood photo</span></div>
+          <div style="font-family:'Caveat',cursive; font-size:19px; color:#5C5546; margin-top:6px;">you, before I knew you</div>
+        </div>
+        <div style="position:absolute; top:-10px; left:38%; width:54px; height:18px; background:rgba(232,163,60,.4); transform:rotate(-5deg);"></div>
+      </div>
+      <div data-p1="3" style="font-family:'Instrument Serif',serif; font-style:italic; font-size:31px; color:#2B2620;">this is for you.</div>
+      <div data-p1="4" style="margin-top:16px; font-size:12px; letter-spacing:3px; font-weight:700; color:#F7F1E6; background:#A5323B; border-radius:100px; padding:15px 34px; box-shadow:0 8px 22px rgba(165,50,59,.35); animation:pulse 1.8s ease-in-out infinite;">► PRESS START</div>
+    </div>
+  </div>
+
+  <!-- PHASE 2 : ANNOUNCEMENT -->
+  <div id="ph2" data-screen-label="2 — Announcement" style="position:absolute; inset:0; background:#F7F1E6; opacity:0; visibility:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 24%, rgba(217,141,132,.30), transparent 62%);"></div>
+    <div data-conf="1" style="position:absolute; top:8%; left:10%; width:10px; height:16px; background:#A5323B; transform:rotate(24deg);"></div>
+    <div data-conf="1" style="position:absolute; top:14%; right:13%; width:9px; height:9px; border-radius:50%; background:#E8A33C;"></div>
+    <div data-conf="1" style="position:absolute; top:22%; left:21%; width:8px; height:14px; background:#E8A33C; transform:rotate(-32deg);"></div>
+    <div data-conf="1" style="position:absolute; top:10%; right:31%; width:11px; height:11px; background:#A5323B; transform:rotate(45deg);"></div>
+    <div data-conf="1" style="position:absolute; top:30%; right:9%; width:10px; height:16px; background:#A5323B; transform:rotate(60deg); opacity:.7;"></div>
+    <div data-conf="1" style="position:absolute; top:36%; left:8%; width:8px; height:8px; border-radius:50%; background:#2B2620; opacity:.5;"></div>
+    <div data-conf="1" style="position:absolute; bottom:30%; left:13%; width:9px; height:15px; background:#E8A33C; transform:rotate(12deg);"></div>
+    <div data-conf="1" style="position:absolute; bottom:22%; right:15%; width:10px; height:10px; background:#A5323B; transform:rotate(30deg); opacity:.6;"></div>
+    <div data-conf="1" style="position:absolute; bottom:38%; right:28%; width:7px; height:12px; background:#2B2620; transform:rotate(-20deg); opacity:.35;"></div>
+    <div data-conf="1" style="position:absolute; top:47%; left:5%; width:8px; height:13px; background:#A5323B; transform:rotate(-50deg); opacity:.5;"></div>
+    <div data-conf="1" style="position:absolute; top:18%; left:33%; transform:rotate(-14deg); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#D98D84; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div></div>
+    <div data-conf="1" style="position:absolute; top:12%; right:22%; transform:rotate(12deg) scale(1.3); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#A5323B; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#A5323B;"></div></div>
+    <div data-conf="1" style="position:absolute; bottom:27%; right:11%; transform:rotate(-8deg); width:16px; height:16px;"><div style="position:absolute; left:2px; top:4px; width:9px; height:9px; background:#D98D84; transform:rotate(45deg);"></div><div style="position:absolute; left:0; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:6px; top:1px; width:9px; height:9px; border-radius:50%; background:#D98D84;"></div></div>
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; padding:32px; text-align:center;">
+      <div data-p2="eb" style="font-size:12px; letter-spacing:3px; font-weight:700; color:#8B8272;">JULY 19 — THE ONLY DATE THAT MATTERS</div>
+      <div data-p2="hb" style="font-family:'Instrument Serif',serif; font-size:34px; line-height:1.1; margin-top:8px;">happy birthday,</div>
+      <div style="display:flex; justify-content:center;">
+        <sc-for list="{{ nameLetters }}" as="ch" hint-placeholder-count="4">
+          <span data-p2-l="1" style="display:inline-block; font-family:'Instrument Serif',serif; font-size:clamp(72px, 24vw, 150px); line-height:.95; color:#A5323B;">{{ ch }}</span>
+        </sc-for>
+      </div>
+      <div data-p2="hw" style="font-family:'Caveat',cursive; font-size:26px; color:#5C5546; transform:rotate(-2deg); margin-top:12px;">I made you something, my love.<br>it&rsquo;s a little much. stay with me.</div>
+    </div>
+    <div data-p2="btn" onClick="{{ adv }}" style="position:absolute; bottom:38px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; cursor:pointer; background:rgba(247,241,230,.7);">KEEP GOING ⟶</div>
+  </div>
+
+  <!-- PHASE 3 : FLOWERS -->
+  <div id="ph3" data-screen-label="3 — Flowers" style="position:absolute; inset:0; background:#EFE7D8; opacity:0; visibility:hidden;">
+    <div data-p3="h" style="position:absolute; top:9%; left:0; right:0; text-align:center;">
+      <div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:28px;">flowers, obviously</div>
+      <div style="font-family:'Caveat',cursive; font-size:22px; color:#8B8272; margin-top:6px;">the kind that never wilt</div>
+    </div>
+    <div data-p3="bq" style="position:absolute; left:50%; top:50%; transform:translate(-50%,-46%); width:300px; height:380px;">
+      <div data-stem="1" style="position:absolute; left:146px; top:60px; width:3px; height:190px; background:#5C6B4F; transform:rotate(-14deg); transform-origin:bottom;"></div>
+      <div data-stem="1" style="position:absolute; left:146px; top:40px; width:3px; height:210px; background:#5C6B4F; transform-origin:bottom;"></div>
+      <div data-stem="1" style="position:absolute; left:146px; top:66px; width:3px; height:186px; background:#5C6B4F; transform:rotate(15deg); transform-origin:bottom;"></div>
+      <div data-stem="1" style="position:absolute; left:146px; top:96px; width:3px; height:156px; background:#5C6B4F; transform:rotate(-27deg); transform-origin:bottom;"></div>
+      <div data-stem="1" style="position:absolute; left:146px; top:96px; width:3px; height:156px; background:#5C6B4F; transform:rotate(27deg); transform-origin:bottom;"></div>
+      <div data-leaf="1" style="position:absolute; left:104px; top:170px; width:34px; height:14px; background:#6E7D5C; border-radius:50%; transform:rotate(-35deg);"></div>
+      <div data-leaf="1" style="position:absolute; left:162px; top:150px; width:34px; height:14px; background:#6E7D5C; border-radius:50%; transform:rotate(30deg);"></div>
+      <div data-bloom="1" style="position:absolute; left:113px; top:-4px; width:70px; height:70px;">
+        <div style="position:absolute; left:24px; top:0px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:44px; top:12px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:44px; top:34px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:24px; top:46px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:4px; top:34px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:4px; top:12px; width:26px; height:26px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:23px; top:22px; width:24px; height:24px; border-radius:50%; background:#E8A33C;"></div>
+      </div>
+      <div data-bloom="1" style="position:absolute; left:52px; top:36px; width:58px; height:58px;">
+        <div style="position:absolute; left:19px; top:0px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:36px; top:10px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:36px; top:28px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:19px; top:38px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:2px; top:28px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:2px; top:10px; width:22px; height:22px; border-radius:50%; background:#D98D84;"></div><div style="position:absolute; left:20px; top:19px; width:19px; height:19px; border-radius:50%; background:#B5842E;"></div>
+      </div>
+      <div data-bloom="1" style="position:absolute; left:186px; top:40px; width:58px; height:58px;">
+        <div style="position:absolute; left:19px; top:0px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:36px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:36px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:19px; top:38px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:2px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:2px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:20px; top:19px; width:19px; height:19px; border-radius:50%; background:#7E2730;"></div>
+      </div>
+      <div data-bloom="1" style="position:absolute; left:18px; top:96px; width:46px; height:46px;">
+        <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#E8A33C;"></div>
+      </div>
+      <div data-bloom="1" style="position:absolute; left:232px; top:100px; width:46px; height:46px;">
+        <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#FBF6EC;"></div>
+      </div>
+      <div data-wrap="1" style="position:absolute; left:88px; top:238px; width:124px; height:120px; background:#F3EBDC; clip-path:polygon(8% 0, 92% 0, 66% 100%, 34% 100%); box-shadow:inset 0 -14px 24px rgba(43,38,32,.10);"></div>
+      <div data-wrap="1" style="position:absolute; left:96px; top:262px; width:108px; height:10px; background:#A5323B; transform:rotate(-2deg);"></div>
+    </div>
+    <div data-p3="btn" onClick="{{ adv }}" style="position:absolute; bottom:38px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; cursor:pointer;">THERE&rsquo;S MORE ⟶</div>
+  </div>
+
+  <!-- PHASE 4 : SONG -->
+  <div id="ph4" data-screen-label="4 — Song" style="position:absolute; inset:0; background:#F7F1E6; opacity:0; visibility:hidden;">
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:32px;">
+      <div data-p4="t" style="font-family:'Instrument Serif',serif; font-style:italic; font-size:26px; margin-bottom:32px;">a song that reminds me of you</div>
+      <div data-p4="art" style="width:min(250px, 58vw); height:min(250px, 58vw); border-radius:14px; background:repeating-linear-gradient(45deg, #E4DAC6 0px, #E4DAC6 10px, #EDE4D2 10px, #EDE4D2 20px); box-shadow:0 16px 40px rgba(43,38,32,.18); display:flex; align-items:center; justify-content:center;">
+        <span style="font-family:'VT323',monospace; font-size:15px; color:#8B8272;">album art / photo</span>
+      </div>
+      <div data-p4="ti" style="font-family:'Instrument Serif',serif; font-size:30px; margin-top:28px;">{{ songTitle }}</div>
+      <div data-p4="ar" style="font-size:13px; letter-spacing:2px; font-weight:700; color:#8B8272; margin-top:8px;">{{ songArtist }}</div>
+      <div data-p4="pl" style="display:flex; align-items:center; gap:16px; margin-top:30px; width:280px;">
+        <div onClick="{{ togglePlay }}" style="width:54px; height:54px; border-radius:50%; background:#A5323B; flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 16px rgba(165,50,59,.35); cursor:pointer;">
+          <div data-p4-play="1" style="width:0; height:0; border-left:16px solid #F7F1E6; border-top:10px solid transparent; border-bottom:10px solid transparent; margin-left:4px;"></div>
+          <div data-p4-pause="1" style="display:none; gap:5px;"><div style="width:5px; height:18px; background:#F7F1E6;"></div><div style="width:5px; height:18px; background:#F7F1E6;"></div></div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+          <div style="position:relative; height:3px; background:#DED4C0; border-radius:2px;">
+            <div data-p4-bar="1" style="position:absolute; left:0; top:0; height:3px; width:0%; background:#A5323B; border-radius:2px;"></div>
+            <div data-p4-dot="1" style="position:absolute; left:0%; top:-4px; width:11px; height:11px; border-radius:50%; background:#A5323B; margin-left:-5px;"></div>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:11px; color:#8B8272; letter-spacing:1px;"><span data-p4-time="1">0:00</span><span>3:41</span></div>
+        </div>
+      </div>
+      <div data-p4="note" style="font-family:'Caveat',cursive; font-size:23px; color:#5C5546; margin-top:32px; text-align:center; line-height:1.4; max-width:290px; transform:rotate(-1.5deg);">verse two, second line — that&rsquo;s the one. you know it.</div>
+    </div>
+    <div data-p4="btn" onClick="{{ adv }}" style="position:absolute; bottom:38px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; cursor:pointer;">NEXT ⟶</div>
+  </div>
+
+  <!-- PHASE 5 : THINGS I LOVE -->
+  <div id="ph5" data-screen-label="5 — Things I love" style="position:absolute; inset:0; background:#F3E4D4; opacity:0; visibility:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%, rgba(217,141,132,.22), transparent 55%);"></div>
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:40px 36px;">
+      <div data-p5="h" style="margin-bottom:38px;">
+        <div style="font-family:'Instrument Serif',serif; font-size:34px; line-height:1.15;">things I <span style="font-style:italic; color:#A5323B;">love</span><br>about you</div>
+        <div style="font-family:'Caveat',cursive; font-size:22px; color:#8B8272; margin-top:8px;">six of them. there are about a million.</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">01</span><span style="font-size:17px; line-height:1.45;">the way you narrate the dog&rsquo;s inner monologue</span></div>
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">02</span><span style="font-size:17px; line-height:1.45;">you always order wrong, then eat half of mine</span></div>
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">03</span><span style="font-size:17px; line-height:1.45;">your laugh arrives before the joke lands</span></div>
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">04</span><span style="font-size:17px; line-height:1.45;">you kept the ticket stubs. all of them</span></div>
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">05</span><span style="font-size:17px; line-height:1.45;">&ldquo;one more episode&rdquo; meaning three</span></div>
+        <div data-p5-line="1" style="display:flex; gap:16px; align-items:baseline; opacity:0;"><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#A5323B;">06</span><span style="font-size:17px; line-height:1.45;">how you make ordinary Tuesdays feel like this</span></div>
+      </div>
+    </div>
+    <div onClick="{{ revealNext }}" style="position:absolute; bottom:38px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; cursor:pointer;"><span data-p5-btn="1">ONE MORE ⟶</span></div>
+  </div>
+
+  <!-- PHASE 6 : PHOTOS -->
+  <div id="ph6" data-screen-label="6 — Photos" style="position:absolute; inset:0; background:#EFE7D8; opacity:0; visibility:hidden;">
+    <div data-p6="h" style="position:absolute; top:6%; left:0; right:0; text-align:center; z-index:8;"><div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:27px;">evidence of a good year</div></div>
+    <div style="position:absolute; left:50%; top:0; transform:translateX(-50%); width:390px; height:100%;">
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:14%; left:22px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-5deg); z-index:2; cursor:pointer;"><div style="height:130px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 01</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:17%; right:18px; width:164px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:3; cursor:pointer;"><div style="height:118px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 02</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">the ferry, march</div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:35%; left:48px; width:140px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(3deg); z-index:4; cursor:pointer;"><div style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 03</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:39%; right:34px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-6deg); z-index:2; cursor:pointer;"><div style="height:112px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 04</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:55%; left:20px; width:160px; padding:8px 8px 28px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-2deg); z-index:3; cursor:pointer;"><div style="height:126px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 05</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">you, mid-sneeze</div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:59%; right:24px; width:144px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(5deg); z-index:2; cursor:pointer;"><div style="height:136px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 06</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:75%; left:56px; width:136px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:4; cursor:pointer;"><div style="height:104px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 07</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:72%; right:40px; width:148px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-4deg); z-index:3; cursor:pointer;"><div style="height:110px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 08</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">stolen fries</div></div>
+    </div>
+    <div data-p6="btn" onClick="{{ adv }}" style="position:absolute; bottom:34px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; background:rgba(239,231,216,.92); z-index:9; cursor:pointer;">ALMOST THERE ⟶</div>
+  </div>
+
+  <!-- PHASE 7 : LETTER -->
+  <div id="ph7" data-screen-label="7 — The letter" style="position:absolute; inset:0; background:#DEC7A8; opacity:0; visibility:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 100%, rgba(165,50,59,.14), transparent 60%);"></div>
+    <div data-p7="paper" style="position:absolute; inset:24px 20px 84px; max-width:640px; margin:0 auto; background:linear-gradient(180deg, #FCF5E4 0%, #F8EDD6 100%); box-shadow:0 12px 34px rgba(43,38,32,.22), inset 0 0 60px rgba(217,141,132,.10); padding:36px 30px; overflow-y:auto;">
+      <div style="font-family:'Caveat',cursive; font-size:21px; line-height:1.5; color:#3A342B;">
+        <div style="font-size:28px; margin-bottom:14px;">{{ recipientName }},</div>
+        <p style="margin:0 0 13px;">I started this letter four different ways and none of them sounded like us. So here&rsquo;s the plain version.</p>
+        <p style="margin:0 0 13px;">This year I watched you do hard things quietly &mdash; hold people up without being asked, laugh anyway on days that didn&rsquo;t deserve it. You think nobody notices. I notice everything.</p>
+        <p style="margin:0 0 13px;">I can&rsquo;t fit a whole year of being lucky onto one page, so instead: thank you. For the coffee handed over without a word. For dancing badly in the kitchen, on purpose. For choosing us on every ordinary day like it&rsquo;s nothing.</p>
+        <p style="margin:0 0 18px;">Whatever this next year turns out to be, I want the seat next to you.</p>
+        <div style="font-size:24px;">happy birthday, my love.</div>
+        <div style="display:flex; align-items:center; gap:18px; margin-top:14px;">
+          <div style="font-size:28px; transform:rotate(-2deg);">&mdash; J.</div>
+          <div style="width:40px; height:40px; border-radius:50%; background:#A5323B; box-shadow:0 4px 10px rgba(126,39,48,.4); display:flex; align-items:center; justify-content:center; transform:rotate(8deg);"><div style="width:27px; height:27px; border-radius:50%; border:2px solid rgba(247,241,230,.55);"></div></div>
+        </div>
+      </div>
+    </div>
+    <div data-p7="btn" onClick="{{ adv }}" style="position:absolute; bottom:32px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#6E6656; cursor:pointer; padding:8px 16px;">ONE LAST THING ⟶</div>
+  </div>
+
+  <!-- PHASE 8 : OPEN YOUR GIFT -->
+  <div id="ph8" data-screen-label="8 — Open your gift" style="position:absolute; inset:0; background:#8E2B34; opacity:0; visibility:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 50% 30%, rgba(255,240,220,.10), transparent 60%);"></div>
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:40px; text-align:center; color:#F7F1E6;">
+      <div data-p8="1" style="position:relative; width:150px; height:110px; margin-bottom:8px;">
+        <div style="position:absolute; left:8px; top:22px; width:64px; height:36px; border:9px solid #F7F1E6; border-radius:50%; transform:rotate(-24deg); opacity:.92;"></div>
+        <div style="position:absolute; right:8px; top:22px; width:64px; height:36px; border:9px solid #F7F1E6; border-radius:50%; transform:rotate(24deg); opacity:.92;"></div>
+        <div style="position:absolute; left:56px; top:58px; width:13px; height:46px; background:#F7F1E6; transform:rotate(18deg); border-radius:3px; opacity:.85;"></div>
+        <div style="position:absolute; right:56px; top:58px; width:13px; height:46px; background:#F7F1E6; transform:rotate(-18deg); border-radius:3px; opacity:.85;"></div>
+        <div style="position:absolute; left:61px; top:38px; width:28px; height:28px; border-radius:50%; background:#E8A33C;"></div>
+      </div>
+      <div data-p8="1" style="font-family:'Caveat',cursive; font-size:24px; color:#EDCFB4;">the screen part is over</div>
+      <div data-p8="1" style="font-family:'Instrument Serif',serif; font-size:52px; line-height:1.08;">now open<br>your gift.</div>
+      <div data-p8="1" style="font-size:15px; line-height:1.6; color:#EDCFB4; max-width:250px;">it&rsquo;s the box this code was taped to. go on &mdash; carefully with the ribbon.</div>
+    </div>
+    <div data-p8="1" style="position:absolute; bottom:32px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:2.5px; color:rgba(247,241,230,.55);">MADE BY HAND · JULY 2026</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844},&quot;recipientName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Maya&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;songTitle&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Golden Hour&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;songArtist&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;KACEY MUSGRAVES&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  phase = 1; revealed = 0; busy = false; playing = false;
+  renderVals() {
+    const name = this.props.recipientName ?? "Maya";
+    return {
+      recipientName: name,
+      nameLetters: [...name],
+      songTitle: this.props.songTitle ?? "Golden Hour",
+      songArtist: this.props.songArtist ?? "KACEY MUSGRAVES",
+      adv: () => this.next(),
+      revealNext: () => this.reveal(),
+      togglePlay: () => this.togglePlay(),
+      photoTap: (e) => this.straighten(e),
+    };
+  }
+  componentDidMount() { this.whenGsap(() => this.enter(1)); }
+  whenGsap(cb) { if (window.gsap) cb(); else setTimeout(() => this.whenGsap(cb), 80); }
+  q(n, sel) { return document.querySelectorAll("#ph" + n + " " + sel); }
+  el(n) { return document.getElementById("ph" + n); }
+  next() {
+    if (this.busy || this.phase >= 8) return;
+    const g = window.gsap, from = this.phase, to = ++this.phase;
+    this.busy = true;
+    if (!g) { this.el(from).style.cssText += ";opacity:0;visibility:hidden"; this.el(to).style.cssText += ";opacity:1;visibility:visible"; this.busy = false; return; }
+    const slow = to === 8; // motion is quietest at the end
+    g.to(this.el(from), { autoAlpha: 0, duration: slow ? 1.6 : 0.45, ease: "power1.inOut" });
+    g.to(this.el(to), { autoAlpha: 1, duration: slow ? 1.6 : 0.45, ease: "power1.inOut", delay: slow ? 0 : 0.3, onComplete: () => { this.busy = false; } });
+    g.delayedCall(slow ? 0.1 : 0.35, () => this.enter(to));
+  }
+  enter(n) {
+    const g = window.gsap; if (!g) return;
+    if (n === 1) {
+      g.from("[data-p1='2']", { y: -24, autoAlpha: 0, duration: 0.8, ease: "power2.out", delay: 0.15 });
+      g.from("[data-p1='1'], [data-p1='3'], [data-p1='4']", { autoAlpha: 0, y: 10, duration: 0.6, stagger: 0.12, delay: 0.5 });
+    }
+    if (n === 2) {
+      const tl = g.timeline();
+      tl.from(this.q(2, "[data-p2='eb']"), { autoAlpha: 0, duration: 0.4 })
+        .from(this.q(2, "[data-p2='hb']"), { autoAlpha: 0, y: 14, duration: 0.45 }, "-=0.1")
+        .from(this.q(2, "[data-p2-l]"), { y: 46, autoAlpha: 0, duration: 0.7, ease: "back.out(1.8)", stagger: 0.06 }, "-=0.15")
+        .from(this.q(2, "[data-conf]"), { y: -220, autoAlpha: 0, rotation: "random(-180,180)", duration: 1.4, ease: "power2.out", stagger: 0.035 }, "-=0.5")
+        .from(this.q(2, "[data-p2='hw']"), { autoAlpha: 0, duration: 0.7 }, "-=0.7")
+        .from(this.q(2, "[data-p2='btn']"), { autoAlpha: 0, duration: 0.5 }, "-=0.3");
+      g.to(this.q(2, "[data-conf]"), { y: "+=14", duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: -1, stagger: { each: 0.2, from: "random" }, delay: 1.6 });
+    }
+    if (n === 3) {
+      const tl = g.timeline();
+      tl.from(this.q(3, "[data-p3='h']"), { autoAlpha: 0, y: 12, duration: 0.6 })
+        .from(this.q(3, "[data-stem]"), { scaleY: 0, duration: 0.9, ease: "power2.out", stagger: 0.08 }, "-=0.2")
+        .from(this.q(3, "[data-leaf]"), { scale: 0, autoAlpha: 0, duration: 0.5, ease: "back.out(2)", stagger: 0.1 }, "-=0.4")
+        .from(this.q(3, "[data-bloom]"), { scale: 0, autoAlpha: 0, transformOrigin: "50% 50%", duration: 0.8, ease: "back.out(1.7)", stagger: 0.14 }, "-=0.3")
+        .from(this.q(3, "[data-wrap]"), { autoAlpha: 0, y: 16, duration: 0.5 }, "-=0.6")
+        .from(this.q(3, "[data-p3='btn']"), { autoAlpha: 0, duration: 0.5 }, "-=0.1");
+      g.to(this.q(3, "[data-p3='bq']"), { rotation: 1.2, transformOrigin: "50% 95%", duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 2.4 });
+    }
+    if (n === 4) {
+      const tl = g.timeline();
+      tl.from(this.q(4, "[data-p4='t']"), { autoAlpha: 0, duration: 0.5 })
+        .from(this.q(4, "[data-p4='art']"), { y: -20, autoAlpha: 0, duration: 0.7, ease: "power2.out" }, "-=0.2")
+        .from(this.q(4, "[data-p4='ti'], [data-p4='ar']"), { autoAlpha: 0, y: 10, duration: 0.5, stagger: 0.1 }, "-=0.2")
+        .from(this.q(4, "[data-p4='pl']"), { autoAlpha: 0, duration: 0.5 }, "-=0.1")
+        .from(this.q(4, "[data-p4='note'], [data-p4='btn']"), { autoAlpha: 0, duration: 0.7, stagger: 0.15 });
+    }
+    if (n === 5) {
+      g.from(this.q(5, "[data-p5='h']"), { autoAlpha: 0, y: 12, duration: 0.6 });
+    }
+    if (n === 6) {
+      g.from(this.q(6, "[data-p6='h']"), { autoAlpha: 0, duration: 0.5 });
+      g.from(this.q(6, "[data-print]"), { y: -60, autoAlpha: 0, duration: 0.7, ease: "back.out(1.2)", stagger: 0.18, delay: 0.3 });
+      g.from(this.q(6, "[data-p6='btn']"), { autoAlpha: 0, duration: 0.5, delay: 1.9 });
+    }
+    if (n === 7) {
+      g.from(this.q(7, "[data-p7='paper']"), { autoAlpha: 0, duration: 0.9, ease: "none" });
+      g.from(this.q(7, "[data-p7='btn']"), { autoAlpha: 0, duration: 0.9, delay: 1.2 });
+    }
+    if (n === 8) {
+      g.from(this.q(8, "[data-p8]"), { autoAlpha: 0, duration: 1.2, stagger: 0.3, ease: "power1.inOut", delay: 0.4 });
+    }
+  }
+  reveal() {
+    const g = window.gsap, lines = this.q(5, "[data-p5-line]"), btn = this.q(5, "[data-p5-btn]")[0];
+    if (this.revealed >= lines.length) { this.next(); return; }
+    const line = lines[this.revealed++];
+    if (g) g.fromTo(line, { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" });
+    else line.style.opacity = 1;
+    if (btn) btn.textContent = this.revealed >= lines.length ? "CONTINUE ⟶" : "ONE MORE ⟶";
+  }
+  togglePlay() {
+    const g = window.gsap; if (!g) return;
+    const bar = this.q(4, "[data-p4-bar]")[0], dot = this.q(4, "[data-p4-dot]")[0];
+    const play = this.q(4, "[data-p4-play]")[0], pause = this.q(4, "[data-p4-pause]")[0];
+    const time = this.q(4, "[data-p4-time]")[0];
+    if (!this.songTl) {
+      const st = { t: 0 };
+      this.songTl = g.timeline({ paused: true })
+        .to(st, { t: 221, duration: 221, ease: "none", onUpdate: () => { const m = Math.floor(st.t / 60), s = Math.floor(st.t % 60); time.textContent = m + ":" + String(s).padStart(2, "0"); } }, 0)
+        .to(bar, { width: "100%", duration: 221, ease: "none" }, 0)
+        .to(dot, { left: "100%", duration: 221, ease: "none" }, 0);
+    }
+    this.playing = !this.playing;
+    play.style.display = this.playing ? "none" : "block";
+    pause.style.display = this.playing ? "flex" : "none";
+    if (this.playing) this.songTl.play(); else this.songTl.pause();
+  }
+  straighten(e) {
+    const g = window.gsap; if (!g) return;
+    const el = e.currentTarget;
+    this.zTop = (this.zTop || 10) + 1;
+    el.style.zIndex = this.zTop;
+    g.to(el, { rotation: 0, scale: 1.06, duration: 0.4, ease: "back.out(1.6)" });
+  }
+}
+</script>
+</body>
+</html>
