@@ -26,7 +26,7 @@
       <div data-p1="1" style="font-size:12px; letter-spacing:3px; font-weight:700; color:#8B8272;">A GIFT, MADE BY HAND</div>
       <div data-p1="2" style="position:relative; margin:12px 0 4px;">
         <div style="width:min(230px, 56vw); padding:10px 10px 32px; background:#FDFAF3; box-shadow:0 14px 34px rgba(43,38,32,.20); transform:rotate(-3deg);">
-          <div style="height:min(250px, 60vw); background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">childhood photo</span></div>
+          <div data-upload="p1photo" style="height:min(250px, 60vw); background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; cursor:pointer;"><span style="font-family:'VT323',monospace; font-size:14px; color:#8B8272;">tap to add<br>childhood photo</span></div>
           <div style="font-family:'Caveat',cursive; font-size:19px; color:#5C5546; margin-top:6px;">you, before I knew you</div>
         </div>
         <div style="position:absolute; top:-10px; left:38%; width:54px; height:18px; background:rgba(232,163,60,.4); transform:rotate(-5deg);"></div>
@@ -88,13 +88,13 @@
       <div data-bloom="1" style="position:absolute; left:186px; top:40px; width:58px; height:58px;">
         <div style="position:absolute; left:19px; top:0px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:36px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:36px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:19px; top:38px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:2px; top:28px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:2px; top:10px; width:22px; height:22px; border-radius:50%; background:#E8A33C;"></div><div style="position:absolute; left:20px; top:19px; width:19px; height:19px; border-radius:50%; background:#7E2730;"></div>
       </div>
-      <div data-bloom="1" style="position:absolute; left:18px; top:96px; width:46px; height:46px;">
+      <div data-bloom="1" style="position:absolute; left:54px; top:90px; width:46px; height:46px;">
         <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#FBF6EC;"></div><div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#E8A33C;"></div>
       </div>
-      <div data-bloom="1" style="position:absolute; left:232px; top:100px; width:46px; height:46px;">
+      <div data-bloom="1" style="position:absolute; left:195px; top:90px; width:46px; height:46px;">
         <div style="position:absolute; left:15px; top:0px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:28px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:28px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:15px; top:30px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:2px; top:22px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:2px; top:8px; width:18px; height:18px; border-radius:50%; background:#A5323B;"></div><div style="position:absolute; left:16px; top:15px; width:15px; height:15px; border-radius:50%; background:#FBF6EC;"></div>
       </div>
-      <div data-wrap="1" style="position:absolute; left:88px; top:238px; width:124px; height:120px; background:#F3EBDC; clip-path:polygon(8% 0, 92% 0, 66% 100%, 34% 100%); box-shadow:inset 0 -14px 24px rgba(43,38,32,.10);"></div>
+      <div data-wrap="1" style="position:absolute; left:88px; top:238px; width:124px; height:120px; background:#C97C53; clip-path:polygon(8% 0, 92% 0, 66% 100%, 34% 100%); box-shadow:inset 0 -14px 24px rgba(43,38,32,.18);"></div>
       <div data-wrap="1" style="position:absolute; left:96px; top:262px; width:108px; height:10px; background:#A5323B; transform:rotate(-2deg);"></div>
     </div>
     <div data-p3="btn" onClick="{{ adv }}" style="position:absolute; bottom:38px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; cursor:pointer;">THERE&rsquo;S MORE ⟶</div>
@@ -104,11 +104,12 @@
   <div id="ph4" data-screen-label="4 — Song" style="position:absolute; inset:0; background:#F7F1E6; opacity:0; visibility:hidden;">
     <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:32px;">
       <div data-p4="t" style="font-family:'Instrument Serif',serif; font-style:italic; font-size:26px; margin-bottom:32px;">a song that reminds me of you</div>
-      <div data-p4="art" style="width:min(250px, 58vw); height:min(250px, 58vw); border-radius:14px; background:repeating-linear-gradient(45deg, #E4DAC6 0px, #E4DAC6 10px, #EDE4D2 10px, #EDE4D2 20px); box-shadow:0 16px 40px rgba(43,38,32,.18); display:flex; align-items:center; justify-content:center;">
-        <span style="font-family:'VT323',monospace; font-size:15px; color:#8B8272;">album art / photo</span>
+      <div data-p4="art" data-upload="albumart" style="width:min(250px, 58vw); height:min(250px, 58vw); border-radius:14px; background:repeating-linear-gradient(45deg, #E4DAC6 0px, #E4DAC6 10px, #EDE4D2 10px, #EDE4D2 20px); background-size:cover; background-position:center; box-shadow:0 16px 40px rgba(43,38,32,.18); display:flex; align-items:center; justify-content:center; cursor:pointer;">
+        <span style="font-family:'VT323',monospace; font-size:15px; color:#8B8272;">tap to add<br>album art / photo</span>
       </div>
       <div data-p4="ti" style="font-family:'Instrument Serif',serif; font-size:30px; margin-top:28px;">{{ songTitle }}</div>
       <div data-p4="ar" style="font-size:13px; letter-spacing:2px; font-weight:700; color:#8B8272; margin-top:8px;">{{ songArtist }}</div>
+      <div data-p4="spotifybtn" onClick="{{ pickSpotify }}" style="font-size:11px; letter-spacing:1.5px; font-weight:700; color:#1DB954; margin-top:10px; cursor:pointer; border-bottom:1px dashed #1DB954;">♫ TAP TO ADD SPOTIFY SONG</div>
       <div data-p4="pl" style="display:flex; align-items:center; gap:16px; margin-top:30px; width:280px;">
         <div onClick="{{ togglePlay }}" style="width:54px; height:54px; border-radius:50%; background:#A5323B; flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 16px rgba(165,50,59,.35); cursor:pointer;">
           <div data-p4-play="1" style="width:0; height:0; border-left:16px solid #F7F1E6; border-top:10px solid transparent; border-bottom:10px solid transparent; margin-left:4px;"></div>
@@ -151,14 +152,14 @@
   <div id="ph6" data-screen-label="6 — Photos" style="position:absolute; inset:0; background:#EFE7D8; opacity:0; visibility:hidden;">
     <div data-p6="h" style="position:absolute; top:6%; left:0; right:0; text-align:center; z-index:8;"><div style="font-family:'Instrument Serif',serif; font-style:italic; font-size:27px;">evidence of a good year</div></div>
     <div style="position:absolute; left:50%; top:0; transform:translateX(-50%); width:390px; height:100%;">
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:14%; left:22px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-5deg); z-index:2; cursor:pointer;"><div style="height:130px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 01</span></div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:17%; right:18px; width:164px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:3; cursor:pointer;"><div style="height:118px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 02</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">the ferry, march</div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:35%; left:48px; width:140px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(3deg); z-index:4; cursor:pointer;"><div style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 03</span></div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:39%; right:34px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-6deg); z-index:2; cursor:pointer;"><div style="height:112px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 04</span></div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:55%; left:20px; width:160px; padding:8px 8px 28px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-2deg); z-index:3; cursor:pointer;"><div style="height:126px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 05</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">you, mid-sneeze</div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:59%; right:24px; width:144px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(5deg); z-index:2; cursor:pointer;"><div style="height:136px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 06</span></div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:75%; left:56px; width:136px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:4; cursor:pointer;"><div style="height:104px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 07</span></div></div>
-      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:72%; right:40px; width:148px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-4deg); z-index:3; cursor:pointer;"><div style="height:110px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 08</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">stolen fries</div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:14%; left:22px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-5deg); z-index:2; cursor:pointer;"><div data-upload="photo1" style="height:130px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 01</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:17%; right:18px; width:164px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:3; cursor:pointer;"><div data-upload="photo2" style="height:118px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 02</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">the ferry, march</div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:35%; left:48px; width:140px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(3deg); z-index:4; cursor:pointer;"><div data-upload="photo3" style="height:140px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 03</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:39%; right:34px; width:150px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-6deg); z-index:2; cursor:pointer;"><div data-upload="photo4" style="height:112px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 04</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:55%; left:20px; width:160px; padding:8px 8px 28px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-2deg); z-index:3; cursor:pointer;"><div data-upload="photo5" style="height:126px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 05</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">you, mid-sneeze</div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:59%; right:24px; width:144px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(5deg); z-index:2; cursor:pointer;"><div data-upload="photo6" style="height:136px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 06</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:75%; left:56px; width:136px; padding:8px 8px 24px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(4deg); z-index:4; cursor:pointer;"><div data-upload="photo7" style="height:104px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 07</span></div></div>
+      <div data-print="1" onClick="{{ photoTap }}" style="position:absolute; top:72%; right:40px; width:148px; padding:8px 8px 26px; background:#FDFAF3; box-shadow:0 8px 20px rgba(43,38,32,.18); transform:rotate(-4deg); z-index:3; cursor:pointer;"><div data-upload="photo8" style="height:110px; background:repeating-linear-gradient(45deg,#E4DAC6 0 10px,#EDE4D2 10px 20px); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center;"><span style="font-family:'VT323',monospace; font-size:13px; color:#8B8272;">photo 08</span></div><div style="font-family:'Caveat',cursive; font-size:16px; color:#5C5546; margin-top:4px; text-align:center;">stolen fries</div></div>
     </div>
     <div data-p6="btn" onClick="{{ adv }}" style="position:absolute; bottom:34px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:2.5px; font-weight:700; color:#2B2620; border:1px solid #2B2620; border-radius:100px; padding:12px 26px; background:rgba(239,231,216,.92); z-index:9; cursor:pointer;">ALMOST THERE ⟶</div>
   </div>
@@ -216,9 +217,63 @@ class Component extends DCLogic {
       revealNext: () => this.reveal(),
       togglePlay: () => this.togglePlay(),
       photoTap: (e) => this.straighten(e),
+      pickSpotify: (e) => { e.stopPropagation(); this.pickSpotify(); },
     };
   }
-  componentDidMount() { this.whenGsap(() => this.enter(1)); }
+  componentDidMount() { this.initUploads(); this.whenGsap(() => this.enter(1)); }
+  // ponytail: base64 in localStorage, ~5MB cap. Big audio won't persist — plays this session only. Swap for a backend upload if that matters.
+  lsSave(k, v) { try { localStorage.setItem("bgift:" + k, v); return true; } catch (e) { return false; } }
+  lsLoad(k) { try { return localStorage.getItem("bgift:" + k); } catch (e) { return null; } }
+  applyImg(el, url) {
+    el.style.backgroundImage = "url(" + url + ")";
+    el.setAttribute("data-filled", "1");
+    const span = el.querySelector("span"); if (span) span.style.display = "none";
+  }
+  pickSpotify() {
+    const url = prompt("Paste a Spotify track link (open.spotify.com/track/... or spotify:track:...):");
+    if (!url) return;
+    const id = (url.match(/track[/:]([A-Za-z0-9]+)/) || [])[1];
+    if (!id) { alert("Couldn't read that as a Spotify track link."); return; }
+    this.showSpotify(id); this.lsSave("spotify", id);
+  }
+  showSpotify(id) {
+    // no-auth oEmbed gives album art + track title; fill the custom player with them
+    fetch("https://open.spotify.com/oembed?url=https://open.spotify.com/track/" + id)
+      .then((r) => r.json())
+      .then((j) => {
+        const art = this.q(4, "[data-p4='art']")[0];
+        if (art && j.thumbnail_url) this.applyImg(art, j.thumbnail_url);
+        const ti = this.q(4, "[data-p4='ti']")[0];
+        if (ti && j.title) ti.textContent = j.title;
+        const b = this.q(4, "[data-p4='spotifybtn']")[0];
+        if (b) b.textContent = "♫ SONG SET — TAP TO CHANGE";
+      })
+      .catch(() => alert("Couldn't load that Spotify track."));
+  }
+  initUploads() {
+    // shared hidden image picker; `target` = element that was clicked
+    let target = null;
+    const imgIn = document.createElement("input");
+    imgIn.type = "file"; imgIn.accept = "image/*"; imgIn.style.display = "none";
+    document.body.appendChild(imgIn); this.imgIn = imgIn;
+    imgIn.addEventListener("change", () => {
+      const f = imgIn.files && imgIn.files[0]; const t = target; imgIn.value = "";
+      if (!f || !t) return;
+      const r = new FileReader();
+      r.onload = () => { this.applyImg(t, r.result); if (!this.lsSave("img:" + t.dataset.upload, r.result)) alert("Photo too large to save permanently — shows this session only."); };
+      r.readAsDataURL(f);
+    });
+    document.querySelectorAll("[data-upload]").forEach((el) => {
+      const saved = this.lsLoad("img:" + el.dataset.upload);
+      if (saved) this.applyImg(el, saved);
+      el.addEventListener("click", (e) => {
+        // filled phase-6 photo: let click bubble to photoTap (straighten) instead of re-uploading
+        if (el.getAttribute("data-filled") === "1" && el.closest("[data-print]")) return;
+        e.stopPropagation(); target = el; imgIn.click();
+      });
+    });
+    const savedSpotify = this.lsLoad("spotify"); if (savedSpotify) this.showSpotify(savedSpotify);
+  }
   whenGsap(cb) { if (window.gsap) cb(); else setTimeout(() => this.whenGsap(cb), 80); }
   q(n, sel) { return document.querySelectorAll("#ph" + n + " " + sel); }
   el(n) { return document.getElementById("ph" + n); }
@@ -259,6 +314,8 @@ class Component extends DCLogic {
       g.to(this.q(3, "[data-p3='bq']"), { rotation: 1.2, transformOrigin: "50% 95%", duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 2.4 });
     }
     if (n === 4) {
+      const sp = this.lsLoad("spotify"); const art = this.q(4, "[data-p4='art']")[0];
+      if (sp && art && art.getAttribute("data-filled") !== "1") this.showSpotify(sp);
       const tl = g.timeline();
       tl.from(this.q(4, "[data-p4='t']"), { autoAlpha: 0, duration: 0.5 })
         .from(this.q(4, "[data-p4='art']"), { y: -20, autoAlpha: 0, duration: 0.7, ease: "power2.out" }, "-=0.2")
@@ -291,10 +348,11 @@ class Component extends DCLogic {
     if (btn) btn.textContent = this.revealed >= lines.length ? "CONTINUE ⟶" : "ONE MORE ⟶";
   }
   togglePlay() {
-    const g = window.gsap; if (!g) return;
+    const g = window.gsap;
     const bar = this.q(4, "[data-p4-bar]")[0], dot = this.q(4, "[data-p4-dot]")[0];
     const play = this.q(4, "[data-p4-play]")[0], pause = this.q(4, "[data-p4-pause]")[0];
     const time = this.q(4, "[data-p4-time]")[0];
+    if (!g) return;
     if (!this.songTl) {
       const st = { t: 0 };
       this.songTl = g.timeline({ paused: true })
